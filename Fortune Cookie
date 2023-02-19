@@ -1,0 +1,40 @@
+# Fortune Cookie Program 🥠
+
+import random
+
+fortune = random.randint(0, 15)
+
+if fortune == 0:
+  print("May you one day be carbon neutral")
+elif fortune == 1:  
+  print("You have rice in your teeth.")
+elif fortune == 2:
+  print("No snowflake feels responsible for an avalanche.")
+elif fortune == 3:
+  print("You can only connect the dots looking backwards.")
+elif fortune == 4:
+  print("The fortune you seek is in another cookie.")
+elif fortune == 5:
+  print("No fortune for you!")
+elif fortune == 6:
+  print("The early bird gets the worm, but the second mouse gets the cheese.")
+elif fortune == 7:
+  print("Some days you are pigeon, some days you are statue")
+elif fortune == 8:
+  print("There is no mistake so great as that of being always right.")
+elif fortune == 9:
+  print("The wise man is the one that makes you think that he is dumb.")
+elif fortune == 10:
+  print("The usefulness of a cup is in its emptiness.")
+elif fortune == 11:
+  print("He who throws mud loses ground.")
+elif fortune == 12:
+  print("Do not mistake temptation for opportunity.")
+elif fortune == 13:
+  print("That wasn’t chicken.")
+elif fortune == 14:
+  print("Fear is interest paid on a debt you may not owe.")
+elif fortune == 15:
+  print("He who dies with most toys, still dies.")
+else:
+  print("error")
