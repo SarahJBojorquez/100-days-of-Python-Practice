@@ -1,7 +1,0 @@
-## Find the length of a hypotenuse triangle.
-
-side_a = float(input("Input first side length: "))
-side_b = float(input("Input second side length: "))
-hypo = (side_a**2 + side_b**2) ** .5
-print("Hypotenuse length is", hypo)
-
