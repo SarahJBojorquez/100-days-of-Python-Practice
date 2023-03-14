@@ -1,0 +1,34 @@
+
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+number3 = int(input("Enter the third number: "))
+number4 = int(input("Enter the fourth number: "))
+
+biggest_number = number1 #assume first number is largest
+if number2 > biggest_number:  #comparing first and second numbers
+    biggest_number = number2  #if second number is larger it becomes biggest_number
+
+if number3 > biggest_number:
+    biggest_number = number3 
+    
+if number4 > biggest_number:
+    biggest_number = number4 
+    
+print("the largest of all the numbers is:" , biggest_number )
+
+
+OR
+
+
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+number3 = int(input("Enter the third number: "))
+number4 = int(input("Enter the fourth number: "))
+ 
+# Check which one of the numbers is the greatest
+# and pass it to the largest_number variable.
+ 
+largest_number = max(number1, number2, number3, number4)
+ 
+# Print the result.
+print("The largest number is:", largest_number)
