@@ -58,7 +58,9 @@ elif computer_choice == rock and player_choice == paper:
     print("You won!")
 elif computer_choice == scissors and player_choice == paper:
     print("You lose!  Try again.")
+elif computer_choice == scissors and player_choice == rock
+    print("You won!")
 else:
-  print("You won!")
+    print("invalid entry. Try again")
   
   
