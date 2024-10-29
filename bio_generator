@@ -1,0 +1,19 @@
+name = input("Enter your name: ")
+hobby = input("Enter your favorite hobby: ")
+animal = input("Enter your favorite animal: ")
+color = input("Enter your favorite color: ")
+city = input("Enter your city: ")
+
+with open(f"{name}.txt", "w") as file:
+    file.write(f"My name is {name}. \n")
+    file.write(f"I live in {city}. \n")
+    file.write(f"My favorite hobby is {hobby}. \n")
+    file.write(f"My favorite animal is {animal}. \n")
+    file.write(f"My favorite color is {color}. \n")
+
+print(f"{name}.txt has been created and saved.")
+
+with open(f"{name}.txt", "r") as file:
+    contents = file.read()
+
+print(contents)
