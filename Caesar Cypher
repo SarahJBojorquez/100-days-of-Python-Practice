@@ -1,0 +1,21 @@
+def caesar_cipher(text, shift):
+    result = ""
+    
+    for character in text:
+        if character.isalpha():  # Check if character is a letter
+            shift_amount = shift % 26
+            if character.isupper():  
+                result += chr((ord(character) - ord('A') + shift_amount) % 26 + ord('A'))
+            else:
+                result += chr((ord(character) - ord('a') + shift_amount) % 26 + ord('a'))
+        else: # Leave non alphabet characters unchanged
+            result += character 
+    return result
+
+# User inputs whatever they want encoded
+text = input("Enter the phrase to encrypt: ")
+shift = int(input("Enter the shift value: "))
+
+# Encrypt the user input
+encrypted_text = caesar_cipher(text, shift)
+print("Encrypted text:", encrypted_text)
