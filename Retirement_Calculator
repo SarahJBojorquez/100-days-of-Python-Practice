@@ -1,0 +1,32 @@
+# Retirement Savings Calculator
+
+# This program calculates the ideal monthly savings amount based on the user's age, 
+# target retirement age, desired savings amount at retirement, and an annual interest rate.
+
+# Get user inputs
+current_age = int(input("What is your current age? "))
+retirement_age = int(input("What is your desired retirement age? "))
+years_to_retirement = retirement_age - current_age
+
+if years_to_retirement <= 0:
+    print("You have already reached or surpassed your retirement age!")
+else:
+    print(f"You have {years_to_retirement} years until retirement.")
+
+    months_to_retirement = years_to_retirement * 12
+    print(f"You have {months_to_retirement} months until retirement.")
+
+    desired_savings = float(input("What is your desired savings amount at retirement? "))
+    annual_interest_rate = float(input("What is your annual interest rate? (e.g., 5.5 for 5.5%) ")) / 100
+
+    # Calculate the monthly interest rate
+    monthly_interest_rate = annual_interest_rate / 12
+
+    # Calculate the monthly savings using the formula for future value of an ordinary annuity
+    if monthly_interest_rate > 0:
+        monthly_savings = desired_savings * monthly_interest_rate / ((1 + monthly_interest_rate) ** months_to_retirement - 1)
+    else:
+        # If the interest rate is 0, it's a simple division
+        monthly_savings = desired_savings / months_to_retirement
+
+    print(f"To achieve your retirement goal, you need to save ${monthly_savings:.2f} per month.")
