@@ -1,0 +1,5 @@
+age = input("Please enter your age: ")
+if age>=18:
+  print("Great! You are Eligible to vote)
+else:
+  print("Sorry, you are ineligible to vote this year!")
